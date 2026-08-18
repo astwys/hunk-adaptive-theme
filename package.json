@@ -1,0 +1,48 @@
+{
+  "name": "hunk-adaptive-theme",
+  "version": "0.1.0",
+  "description": "Adapt Hunk's theme to the terminal background at startup.",
+  "keywords": [
+    "hunk",
+    "hunk-extension",
+    "terminal",
+    "theme",
+    "dark-mode",
+    "light-mode"
+  ],
+  "homepage": "https://github.com/astwys/hunk-adaptive-theme#readme",
+  "bugs": {
+    "url": "https://github.com/astwys/hunk-adaptive-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astwys/hunk-adaptive-theme.git"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "author": "Michael Bartl <astwys@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.1",
+  "type": "module",
+  "hunk": {
+    "apiVersion": 6,
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "dev": "hunk diff --extension .",
+    "test": "bun test",
+    "test:pty": "python3 test/pty/run.py",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.14",
+    "hunkdiff": "^0.19.0",
+    "typescript": "^5.9.3"
+  }
+}

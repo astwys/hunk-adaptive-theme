@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "Preserve",
+    "moduleResolution": "bundler",
+    "lib": ["ES2021"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["bun"]
+  },
+  "include": ["src"]
+}
