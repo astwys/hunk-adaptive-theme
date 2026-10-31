@@ -6,8 +6,8 @@ import {
   readThemeModeFromTerminal,
   selectTheme,
   themeModeForBackground,
-} from "./theme.js";
-import type { TerminalThemeMode } from "./theme.js";
+} from "./theme";
+import type { TerminalThemeMode } from "./theme";
 
 const ESC = String.fromCharCode(27);
 const BEL = String.fromCharCode(7);

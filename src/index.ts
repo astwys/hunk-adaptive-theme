@@ -1,5 +1,5 @@
 import type { HunkExtensionAPI } from "hunkdiff/extension";
-import { queryTerminalThemeMode, selectTheme } from "./theme.js";
+import { queryTerminalThemeMode, selectTheme } from "./theme";
 
 const THEME_ID = "adaptive-theme";
 
